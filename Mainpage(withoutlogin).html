@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+<!-- 768px -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MainPage(withoutLogin)</title>
+  
+  <link rel="stylesheet" href="../static/css/header.css" />
+  <link rel="stylesheet" href="../static/css/reset.css" />
+  <link rel="stylesheet" href="../static/css/firstMain.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <a href="" class="header__logo">
+          <img src="../static/img/logo.png" alt="로고입니다." />
+      </a>
+      <div class="header__navbar">
+          <a href="">Home</a>
+          <a href="">Lecture</a>
+          <a href="">Log in</a>
+      </div>
+  </div>
+    <div class="mainBody">
+      <div class="mainBodyLeft">
+        <div class="mainBodyLeftTitle">
+          '과기대멋사'만 있다면<br>수강신청 고민 끝!
+        </div>
+        <div class="mainBodyLeftContent">
+          시간표 짤 때마다 무슨 강의를 들어야 할 지 고민하시나요?<br>
+          강의계획서 보고 수강한 강의가 실망스러우셨나요?<br>
+          실제 수강한 학생들이 직접!<br>
+          다섯개의 평가 항목으로 보다 정확하게!<br>
+          우리학교 강의평가 보고 나한테 꼭 맞는 강의 찾아보세요!
+        </div>
+      </div>
+      <form class="mainBodyRight" action="/signup" method="POST">
+        <div>
+          <label>
+            Username<br />
+            <input type="text" name="username" placeholder="닉네임을 입력해주세요." />
+          </label>
+        </div>
+        <div>
+          <label>
+            Email<br />
+            <input type="email" name="email" placeholder="이메일을 입력해주세요." />
+          </label>
+        </div>
+        <div>
+          <label>
+            Password<br />
+            <input type="password" name="password" placeholder="패스워드를 입력해주세요." />
+          </label>
+        </div>
+        <input class="mainBodyRightSubmit" type="submit" title="회원가입" value="Sign up for 작심31" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
